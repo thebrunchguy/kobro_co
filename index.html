@@ -1,37 +1,63 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kobro - Thoughts and Musings</title>
+    <title>Personal Site</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
 </head>
-<body>
-    <header>
-        <h1>Welcome to Kobro</h1>
-        <nav>
-            <ul>
-                <li><a href="#posts">Posts</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
+<body>
+    
     <main>
-        <section id="posts">
-            <article>
-                <h2>Post Title</h2>
-                <p>Post excerpt or introduction here...</p>
-                <a href="#">Read more</a>
-            </article>
-            <!-- Repeat the article block for each post -->
+        <div class="sidebar">
+            <nav class="vertical-menu">
+                <a href="#hello" class="menu-item">Hello</a>
+                <a href="#writing" class="menu-item">Writing</a>
+                <a href="#projects" class="menu-item">Projects</a>
+                <!-- Add other sections as needed -->
+            </nav>
+        </div>
+
+        <section id="hello" class="terminal">
+            <p>> Hello</p>
+            <p>> My name is David Kobrosky</p>
+            <p>> Scroll down for thoughts & projects <span class="cursor">|</span></p>
         </section>
+
+        <a href="#writing" class="scroll-arrow">↓</a>
+
+
+        <section id="writing">
+            <p> Here's some thoughts: </p>
+            <!-- Content of the writing section -->
+            <a href="#projects" class="scroll-arrow">↓</a>
+        </section>
+        
+        <!-- Add other sections as needed -->    
+
+        <section id="projects" class="projects">
+            <div class="project">
+                <img src="Intros AI Logo.png" alt="Intros AI">
+                <p>Connection Infra</p>
+            </div>
+            <div class="project">
+                <img src="placeholder-image-2.png" alt="Project 2">
+                <p>Project 2 Description</p>
+            </div>
+        </section>
+
+        <!-- Additional sections would go here -->
     </main>
 
-    <footer>
-        <p>© 2024 Kobro. All rights reserved.</p>
+    <footer class="footer">
+        <p>Made with love and coffee in NYC.</p>
     </footer>
+
+    <!-- Link to your external JS file -->
+    <script src="scripts.js"></script>
 </body>
 </html>

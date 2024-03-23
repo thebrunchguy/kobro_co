@@ -1,28 +1,193 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-header, nav, main, footer {
-    text-align: center;
-    padding: 1em;
-}
-
-nav ul {
-    list-style: none;
+/* Reset some default browser styles */
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+html {
+    scroll-behavior: smooth;
 }
 
-nav ul li a {
-    text-decoration: none;
+body {
+    font-family: 'Open Sans', sans-serif; /* Replace 'Open Sans' with the actual font you choose */
+    font-size: 16px;
+    line-height: 1.6;
     color: #333;
+    background-color: #fff;
 }
 
+
+/* Utility classes for padding and margin */
+.padded {
+    padding: 20px;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Grid Layout for Projects */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.project {
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.project:hover {
+    box-shadow: 0 4px 14px 0 rgba(0,0,0,0.10);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the menu vertically */
+    align-items: flex-start;
+    padding: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.vertical-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;
+    padding-right: 100px;
+}
+
+.menu-item {
+    background: #fff; /* Background color for menu items */
+    margin-bottom: 10px; /* Space between menu items */
+    padding: 40px;
+    border-radius: 5px; /* Rounded corners for menu items */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    color: black
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background-color: #fffdef; /* Highlight color */
+    color: #000000; /* Text color for active/hover state */
+    text-decoration: none;
+}
+
+.scroll-arrow {
+    text-align: center;
+    display: block;
+    margin-top: 200px; /* Adds more space around the arrow and centers it */
+    padding-bottom: 350px;
+    font-size: 36px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Style sections */
+section {
+    padding: 100px;
+    margin-top: 50px;
+}
+
+.terminal {
+    background: #333;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto; /* this centers it horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+  
+  .terminal p {
+    margin: 0 0 5px 0; /* Adjust space between lines */
+  }
+  
+  .cursor {
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink 1s steps(2, start) infinite;
+  }
+
+/* Footer styles */
 footer {
-    font-size: 0.8em;
+    background-color: #fafafa;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #888;
+}
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+
+/* Responsive media queries */
+@media (max-width: 600px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
 }
