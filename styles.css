@@ -116,7 +116,7 @@ main {
 
 .menu-item:hover,
 .menu-item.active {
-    background-color: #fffdef; /* Highlight color */
+    background-color: #94938d; /* Highlight color */
     color: #000000; /* Text color for active/hover state */
     text-decoration: none;
 }
