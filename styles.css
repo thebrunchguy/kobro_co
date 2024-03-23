@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif; /* Replace 'Open Sans' with the actual font you choose */
+    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     line-height: 1.6;
     color: #333;
@@ -116,8 +116,8 @@ main {
 
 .menu-item:hover,
 .menu-item.active {
-    background-color: #94938d; /* Highlight color */
-    color: #000000; /* Text color for active/hover state */
+    background-color: #333; /* Highlight color */
+    color: #ffffff; /* Text color for active/hover state */
     text-decoration: none;
 }
 
@@ -135,7 +135,6 @@ main {
 /* Style sections */
 section {
     padding: 100px;
-    margin-top: 50px;
 }
 
 .terminal {
